@@ -100,11 +100,12 @@
 					//根据超链接的文本添加选项卡
 					switch($(this).text()){
 						case "人事申请":
-							if(!$("#tt").tabs("exists",'财务申请')){
+							if(!$("#tt").tabs("exists",'人事申请')){
 								$('#tt').tabs('add', {
-									title: '财务申请',
+									title: '人事申请',
 									closable: true,
-									href:"applyFor/personnel.html"
+									href:"applyFor/personnel.html",
+									
 								});
 							}
 							break;
